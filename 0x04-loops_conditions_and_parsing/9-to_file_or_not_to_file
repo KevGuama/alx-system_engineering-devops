@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
-#Creating a script that uses nested if statements
-file="school"
-if [ -e $file ]
-then
-    echo "$file file exists"
+#a Bash script that gives you information about the holbertonschool file
+file="holbertonschool"
 
-    if [ -s $file ]
+if [ -e "$file" ]
+then
+    echo "holbertonschool file exists"
+
+    if [ -s "$file" ]
     then
-	echo "$file file is not empty"
+        echo "holbertonschool file is not empty"
     else
-	echo "$file file is empty"
+        echo "holbertonschool file is empty"
     fi
 
-    if [ -f $file ]
+    if [ -f "$file" ]
     then
-	echo "$file is a regular file"
+        echo "holbertonschool is a regular file"
     fi
 else
-    echo "$file file does not exist"
+    echo "holbertonschool file does not exist"
 fi

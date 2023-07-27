@@ -1,3 +1,6 @@
 #!/usr/bin/env bash
-#Script that parses Apache logs
-awk -F' ' '{ print $1 " " $9 }' apache-access.log
+# This script parses a log of apache we server
+
+filename="apache-access.log"
+
+awk '{print $1 " " $9}' $filename
