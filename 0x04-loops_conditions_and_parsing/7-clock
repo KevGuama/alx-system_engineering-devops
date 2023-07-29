@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
-#Creating a script that uses a nested loop
-hour=0
-while [ $hour -le 12 ]
+# This script is displaying "Holberton School" 10 times
+hours=0
+minutes=1
+while ((hours<=12))
 do
-    echo "Hour: $hour"
-    minutes=1
-    while [ $minutes -lt 60 ]
-    do
-	echo "$minutes"
-	((minutes++))
-    done
-    ((hour++))
+	printf "Hour: %d\n" $hours
+	((hours++))
+	while ((minutes<=59))
+	do
+		printf "%d\n" $minutes
+		((minutes++))
+	done
+	minutes=1
 done
