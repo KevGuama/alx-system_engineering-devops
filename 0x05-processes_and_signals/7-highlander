@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#Write a Bash script that displays
+# Comment to tell you what this task it about - NOT!
 while true
 do
-	printf "To infinity and beyond\n"
+	echo "To infinity and beyond"
 	sleep 2
-	printf "I am invincible!!!\n" 14
+	trap 'echo "I am invincible!!!"' SIGTERM
 done
