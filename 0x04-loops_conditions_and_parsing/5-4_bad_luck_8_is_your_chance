@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
+# This script is displaying "Best School" 10 times
 c=1
 while ((c<=10))
 do
@@ -10,7 +10,7 @@ do
 	then
 		echo "good luck"
 	else
-		echo "Holberton School"
+		echo "Best School"
 	fi
 	((c++))
 done
