@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-# manages daemons
-
-while true;
+#Writes a message to a file
+while :
 do
-    echo "I am alive!" >> /tmp/my_process
-    sleep 2
+	echo "I am alive!" >> /tmp/my_process
+	sleep 2
 done
