@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#Bash script that displays a message when it is terminated
-trap 'echo "I am invincible!!!"' SIGTERM
-while :
+#Write a Bash script that displays
+while true
 do
-	echo "To infinity and beyond"
+	printf "To infinity and beyond\n"
 	sleep 2
+	printf "I am invincible!!!\n" 14
 done
