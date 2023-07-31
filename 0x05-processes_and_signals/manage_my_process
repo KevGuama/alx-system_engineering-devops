@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# Comment to tell you what this task it about - NOT!
-while true
+# manages daemons
+
+while true;
 do
-	echo 'I am alive!' >> /tmp/my_process #write or overwrite?
-	sleep 2
+    echo "I am alive!" >> /tmp/my_process
+    sleep 2
 done
