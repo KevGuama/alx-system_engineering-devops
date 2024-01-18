@@ -19,7 +19,7 @@ def top_ten(subreddit):
         'limit': 10
     }
 
-    url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
+    url = "https://www.reddit.com/dev/api//r/{}/hot.json".format(subreddit)
     res = requests.get(url,
                        headers=headers,
                        params=params,
