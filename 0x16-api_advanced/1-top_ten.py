@@ -13,7 +13,7 @@ def top_ten(subreddit):
         api_url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
         headers = {'user-agent': 'safari:holberton/0.1.0'}
         response = requests.get(api_url, headers=headers)
-        if response.status_code is not 200:
+        if response.status_code != 200:
             posts = "None\n"
         else:
             posts_json = response.json().get("data").get("children")
