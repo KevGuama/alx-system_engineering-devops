@@ -7,9 +7,11 @@ import requests
 import sys
 
 
+import requests
+
 def number_of_subscribers(subreddit):
     """ Queries to Reddit API """
-    u_agent = 'Mozilla/5.0'
+    u_agent = 'opera:mycoolapp:v1.0.0 (by /u/KevKaariz)'
 
     headers = {
         'User-Agent': u_agent
@@ -24,4 +26,4 @@ def number_of_subscribers(subreddit):
         return 0
     if 'subscribers' not in dic.get('data'):
         return 0
-    return res.json()['data']['subscribers']
+    return dic['data']['subscribers']
