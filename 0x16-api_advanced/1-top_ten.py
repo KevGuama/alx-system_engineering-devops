@@ -9,7 +9,7 @@ import sys
 
 def top_ten(subreddit):
     """ Queries to Reddit API """
-    u_agent = 'Mozilla/5.0'
+    u_agent = 'opera:mycoolapp:v1.0.0 (by /u/KevKaariz)'
 
     headers = {
         'User-Agent': u_agent
@@ -29,7 +29,7 @@ def top_ten(subreddit):
         return
     dic = res.json()
     hot_posts = dic['data']['children']
-    if len(hot_posts) == 0:
+    if len(hot_posts) is 0:
         print(None)
     else:
         for post in hot_posts:
