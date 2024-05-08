@@ -6,9 +6,6 @@ the number of subscribers for a given subreddit.
 import requests
 import sys
 
-
-import requests
-
 def number_of_subscribers(subreddit):
     """ Queries to Reddit API """
     u_agent = 'opera:mycoolapp:v1.0.0 (by /u/KevKaariz)'
