@@ -6,6 +6,7 @@ the number of subscribers for a given subreddit.
 import requests
 import sys
 
+
 def number_of_subscribers(subreddit):
     """ Queries to Reddit API """
     u_agent = 'opera:mycoolapp:v1.0.0 (by /u/KevKaariz)'
@@ -23,4 +24,4 @@ def number_of_subscribers(subreddit):
         return 0
     if 'subscribers' not in dic.get('data'):
         return 0
-    return dic['data']['subscribers']
+    return res.json()['data']['subscribers']
